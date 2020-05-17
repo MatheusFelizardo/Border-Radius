@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bin2Dec</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="estilo.css">	
+
+	<script>
+			
+			
+		
+		function recuperarValor() { 
+		var valorDigitadoPeloUsuario = document.getElementById("valorBinario").value
+		
+
+		if (valorDigitadoPeloUsuario === "") { alert ("O número digitado tem que ser 0 ou 1") }
+			valorDigitadoPeloUsuario.split ("").map((char) => {
+			if (char !== "0" && char !== "1") { alert ("O número digitado tem que ser 0 ou 1")} 
+		})
+
+		var valorEmDecimal = parseInt (valorDigitadoPeloUsuario,2)
+		document.getElementById ("valorConvertido").value = valorEmDecimal
+		}
+		
+		
+
+	</script>
+		
+</head>
+<body>
+
+
+	<h2> Bin2Dec - Conversor de Binário para Decimal </h2>
+	<hr/>
+
+	<div class="tamanho">
+
+	<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Número Binário</span>
+  </div>
+  <input id="valorBinario" maxlength="8" onchange="recuperarValor()" type="text" class="form-control" placeholder="Digite o número binário" aria-label="Usuário" aria-describedby="basic-addon1" >
+
+  <button onclick="recuperarValor()"> Transcrever </button>
+
+</div>
+
+	<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">Transcrição para Decimal</span>
+  </div>
+  <input id="valorConvertido" type="text" class="form-control" disabled="" aria-label="Usuário" aria-describedby="basic-addon1">
+</div>
+
+
+</div>
+
+
+</body>
+</html>
