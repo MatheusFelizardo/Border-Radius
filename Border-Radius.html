@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="estilo.css">
+  
+    <title>Border-Radius Preview</title>
+
+</head>
+<body>
+
+    <h2>Border-Radius Preview</h2>
+    
+    <div id="tamanhoAplicação">
+    <!--Parte superior do quadrado-->
+    <div class="Superior"> 
+        <input onkeyup="alterarBorderRadius(), mostrarResultado ()" id="superiorEsquerdo" type="text" size="1px">
+        <input onkeyup="alterarBorderRadius(), mostrarResultado ()" id="superiorDireito" type="text" size="1px">
+    </div>
+
+    <span class="clear"></span>
+
+    <!--Quadrado-->
+    <div id="caixa">
+
+        <div id="resultado"> </div>
+
+    </div>
+
+    <!--Parte inferior do quadrado-->
+    <div class="Inferior"> 
+        <input onkeyup="alterarBorderRadius(),mostrarResultado ()" id="inferiorEsquerdo" type="text" size="1px">
+        <input onkeyup="alterarBorderRadius(),mostrarResultado ()" id="inferiorDireito" type="text" size="1px">
+    </div>   
+
+       
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,6 +1,47 @@
-.tamanho { 
+body {
+    width: 80%px;
+}
 
-	
-	width: 600px;
+h2 {
+    text-align: center;
+    
+}
 
- }
+#caixa { 
+    border: 1px solid black;
+    width: 320px;
+    height: 320px;
+    
+    }
+#resultado {
+    padding-top: 40%;
+    text-align: center;
+}
+#tamanhoAplicação {
+
+    padding-top: 20px;
+    padding-left: 38%;
+    width: 320px;
+}
+
+
+.Superior {
+    margin-bottom: 10px;
+    
+}
+
+#superiorDireito {
+    float: right;
+}
+
+.Inferior { 
+    margin-top: 10px;
+}
+
+#inferiorDireito { 
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
